@@ -1,5 +1,11 @@
-function Home() {
-    return <h1>Hellow World, Amore Mio</h1>
-}
+import { GlobalStyle } from '../styles/global'
+import { Main } from './styles'
 
-export default Home;
+export default function Home() {
+    return (
+        <Main>
+            <h1>Hellow World</h1>
+            <GlobalStyle />
+        </Main>
+    )
+}
