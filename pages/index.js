@@ -1,6 +1,5 @@
 import { GlobalStyle } from '../styles/global';
-import { Container, Main } from './styles';
-import coracao from '../assets/coracao.png';
+import { Container, Main } from '../components/styles';
 
 export default function Home() {
     return (
