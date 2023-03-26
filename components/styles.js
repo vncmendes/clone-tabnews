@@ -24,4 +24,9 @@ export const Container = styled.div`
     width: 300px;
     height: 300px;
   }
+
+  h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
 `
