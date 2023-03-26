@@ -1,7 +1,7 @@
 import { GlobalStyle } from '../styles/global';
 import { Container, Main } from '../components/styles';
 
-export default function Home() {
+function Home() {
     return (
         <Main>
             <Container>
@@ -17,3 +17,5 @@ export default function Home() {
         </Main>
     )
 }
+
+export default Home;
