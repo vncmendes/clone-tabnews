@@ -6,7 +6,7 @@ function Home() {
         <Main>
             <Container>
                 <h1>Você é o elétron que faltava no meu proton</h1>
-                <h1>e a nossa união cirou o nucleo atômico;</h1>
+                <h1>e a nossa união cirou o nucleo atômico</h1>
                 <h1>a força forte</h1>
                 <h2>*-*</h2>
             </Container>
