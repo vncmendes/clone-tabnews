@@ -5,7 +5,7 @@ export const Main = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
   :first-child {
     margin-top: 10rem;
@@ -29,4 +29,4 @@ export const Container = styled.div`
     padding-top: 2rem;
     font-size: 3rem;
   }
-`
+`;

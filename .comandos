@@ -8,6 +8,7 @@ Comandos
 # npm install react@18.2.0 - instalando o react na versão x
 # npm install react-dom@18.2.0 - instalando o react-dom na versão x
 # npm run dev - roda o script criado com o nome dev dentro da tag "scrips" dentro do package.json
+# npm install prettier -D
 
 
 Informações
