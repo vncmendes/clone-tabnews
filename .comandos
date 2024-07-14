@@ -10,6 +10,26 @@ Comandos
 # npm run dev - roda o script criado com o nome dev dentro da tag "scrips" dentro do package.json
 # npm install prettier -D
 
+Docker
+# (labels: ) <=> (<=>) => finish line, not used.
+
+# compose.yaml, config:
+# database:
+#   image: "postgres:16.0-alpine3.18"
+#   environment:
+#     POSTGRES_PASSWORD: "pgpass" 
+# with this approach it is now possible to connect to DBSM-or-SGBD Postgress.
+
+# starting compose.yaml from a path:
+# docker compose -f ./infra/compose.yaml up -d <=> -f (-file), -d (detach) => run the process in background, letting free the terminal to use.
+# recreating container: docker compose -f ./infra/compose.yaml up -d --force-recreate <=> same as docker down and up again.
+
+PSql Cliente
+# sudo apt install postgresql-client
+# connecting with postgres after set ports: - "5432:5432" on compose.yaml
+# psql --host=localhost --username=postgres --port=5432
+# testing: select 1 + 1; terminal response: 2;
+
 
 Informações
 # .nvmrc - define instruções padrão para o projeto- o RC do final significa Run Commands.
