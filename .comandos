@@ -30,6 +30,8 @@ PSql Cliente
 # psql --host=localhost --username=postgres --port=5432
 # testing: select 1 + 1; terminal response: 2;
 
+npm install pg@18.11.3
+# another cliente to connect with database, but throw nodejs.
 
 Informações
 # .nvmrc - define instruções padrão para o projeto- o RC do final significa Run Commands.
