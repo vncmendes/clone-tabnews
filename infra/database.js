@@ -10,14 +10,15 @@ async function query(queryObject) {
   })
 
   await client.connect();
-  const result = await client.query(queryObject);
-  await client.end();
-  return result;
-}
-
-export async function databaseInformations() {
-  const dbInfos = "SELECT * FROM pg_stat_activity;"
-  return dbInfos;
+  
+  try {
+    const result = await client.query(queryObject);
+    return result;
+  } catch (error) {
+      throw error
+  } finally {
+      await client.end();
+  }
 }
 
 export default {
