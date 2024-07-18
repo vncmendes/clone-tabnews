@@ -27,6 +27,7 @@ Docker
 PSql Cliente
 # sudo apt install postgresql-client
 # connecting with postgres after set ports: - "5432:5432" on compose.yaml
+# psql -h localhost -p 5432 -U local_user -d local_db
 # psql --host=localhost --username=postgres --port=5432
 # testing: select 1 + 1; terminal response: 2;
 

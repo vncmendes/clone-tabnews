@@ -15,6 +15,11 @@ async function query(queryObject) {
   return result;
 }
 
+export async function databaseInformations() {
+  const dbInfos = "SELECT * FROM pg_stat_activity;"
+  return dbInfos;
+}
+
 export default {
   query: query
 }

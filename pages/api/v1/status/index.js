@@ -1,9 +1,13 @@
-import database from "/infra/database.js";
-
+import database, { databaseInformations } from "/infra/database.js";
 async function status(request, response) {
-  const result = await database.query("SELECT 1 + 1 as sum");
-  console.log(result.rows);
-  response.status(200).json({oi: "tchau"});
+  const updatedAt = new Date().toISOString();
+
+  const dbInfoResponse = await databaseInformations();
+  console.log(dbInfoResponse);
+  
+  response.status(200).json({
+    updated_at: updatedAt
+  });
 }
 
 export default status;
