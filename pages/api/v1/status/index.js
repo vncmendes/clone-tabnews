@@ -13,8 +13,6 @@ async function status(request, response) {
   console.log(openedConnections.rows[0].count);
   const polishedOpenedConnections = openedConnections.rows[0].count
 
-  const latency = await database.query("SELECT 2 + 5");
-
   const version = await database.query("SHOW SERVER_VERSION;");
   const polishedVersion = version.rows[0].server_version;
 
@@ -25,7 +23,6 @@ async function status(request, response) {
       database: {
         max_connections: parseInt(polishedMaxConnections),
         opened_connections: polishedOpenedConnections,
-        latency: latency,
         version: polishedVersion
       }
     }
