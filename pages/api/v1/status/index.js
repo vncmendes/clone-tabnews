@@ -7,15 +7,12 @@ async function status(request, response) {
   const polishedMaxConnections = maxConnection.rows[0].max_connections;
 
   const databaseName = process.env.POSTGRES_DB
-  console.log(databaseName);
   const openedConnections = await database.query({text: "SELECT count(*)::int FROM pg_stat_activity WHERE datname = $1;", values: [databaseName]});
 
-  console.log(openedConnections.rows[0].count);
   const polishedOpenedConnections = openedConnections.rows[0].count
 
   const version = await database.query("SHOW SERVER_VERSION;");
   const polishedVersion = version.rows[0].server_version;
-
 
   response.status(200).json({
     updated_at: updatedAt,
